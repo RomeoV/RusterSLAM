@@ -1,16 +1,16 @@
-#[allow(non_snake_case)]
-pub mod add_feature;
-#[allow(non_snake_case)]
-pub mod feature_update;
-#[allow(non_snake_case)]
-pub mod particle;
-#[allow(non_snake_case)]
-mod compute_jacobians;
-mod normalize_angle;
-#[allow(non_snake_case)]
 mod KF_cholesky_update;
+mod add_feature;
+mod compute_jacobians;
+mod compute_steering;
+mod compute_weight;
+mod feature_update;
+mod get_observations;
 mod multivariate_gauss;
-pub mod predict;
-pub mod compute_weight;
-pub mod compute_steering;
-pub mod predict_true;
+mod normalize_angle;
+mod predict;
+mod predict_true;
+mod resample_particles;
+mod stratified_random;
+pub mod observe_update;
+pub mod particle;
+pub mod predict_update;

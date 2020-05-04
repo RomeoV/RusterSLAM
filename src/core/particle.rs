@@ -2,8 +2,9 @@ use nalgebra::{Matrix2, Matrix3, Vector2, Vector3};
 use Vec;
 
 #[allow(non_snake_case)]
-pub struct Particle<'a> {
-    pub weight: &'a f64,
+#[derive(Clone)]
+pub struct Particle {
+    pub weight: f64,
     pub xv: Vector3<f64>,
     pub Pv: Matrix3<f64>,
     pub Nf: u32,

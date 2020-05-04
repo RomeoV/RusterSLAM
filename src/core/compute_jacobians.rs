@@ -16,8 +16,7 @@ pub fn compute_jacobians(
     idf: &Vec<usize>,
     R: &Matrix2<f64>,
     jac_results: &mut JacobianResults,
-)
-{
+) {
     jac_results.z_pred.clear();
     jac_results.Hv.clear();
     jac_results.Hf.clear();

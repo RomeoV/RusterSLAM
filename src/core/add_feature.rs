@@ -1,7 +1,7 @@
 use super::particle::Particle;
 use nalgebra::{Matrix2, Vector2};
 
-fn add_feature(particle: &mut Particle, zs: &Vec<[f64; 2]>, R: &Matrix2<f64>) {
+pub fn add_feature(particle: &mut Particle, zs: &Vec<&Vector2<f64>>, R: &Matrix2<f64>) {
     for z in zs.iter() {
         let r = z[0];
         let b = z[1];
